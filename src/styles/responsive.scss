@@ -1,0 +1,218 @@
+@import "mixins.scss";
+@import "variables.scss";
+// TABLETTE 
+@media screen and (min-width: 480px)
+{
+	// MAIN TABLETTE HOME////////////////////////////////////////
+	#home
+	{
+		p
+		{
+			font-size: 1.3rem;
+		}
+		#presentation
+		{
+			margin-top: 230px;
+		}
+		#main_services
+		{
+			background-image: url(../images/bg-homepage2.jpg);
+			background-size: 100%;
+			background-repeat: no-repeat;
+			padding-bottom: 50px;
+			.services
+			{
+				@include flexRow();
+				align-items: flex-start;
+				article
+				{
+					background-color: $colorWhite;
+					width: 100%;
+					margin: 10px;
+					padding: 15px;
+					border-bottom: none;
+					box-shadow: 2px 3px 10px $colorWhite;
+				}
+			}
+		}
+		#p4
+		{
+			background-image: url(../images/bg-homepage4.jpg);
+			background-size: 100%;
+			background-repeat: no-repeat;
+			.assistance
+			{
+				min-height: 700px;
+				padding-top: 100px;
+				width: 60%;
+				.icondivp4
+				{
+					width: 50%;
+				}
+			}
+		}
+		.bas{
+			img
+			{
+				width: 70px;
+			}
+		}
+	}
+	// MAIN TABLETTE CREATIONS //////////////////////////////////////
+	#creations
+	{
+		p{
+			font-size: 1.3rem;
+		}
+		.creations_header
+		{
+			article
+			{
+				p
+				{
+					text-align: center;
+				}
+				
+			}
+		}
+		#section_sites
+		{
+			.sites
+			{
+				ul
+				{
+					width: 90%;
+					display: flex;
+					li
+					{
+						margin: 20px;
+						h3
+						{
+							padding-top: 30px;
+						}
+						img
+						{
+							border-radius: 15px;
+							border: none;
+						}
+					}
+					
+				}
+				
+			}
+			.responsive
+			{
+				width: 50%;
+				img
+				{
+					width: 100%;
+
+				}
+				
+			}
+			
+		}
+	}
+	// MAIN TABLETTE CONTACT ////////////////////////////////////////////////
+	#contact
+	{
+		.formulaire
+		{
+			width: 50%;
+			input,
+			textarea
+			{
+				width: 280px;
+				border-radius: 10px;
+			}
+		}
+	}
+}
+//****************************************************************************************
+//****************************************************************************************
+//****************************************************************************************
+// DESCKTOP
+@media screen and (min-width: 977px)
+{
+
+	#home
+	{
+		#presentation
+		{
+			display: none;
+		}
+		.parallax1
+		{
+			display: block;
+			background-image: url(../images/bg-homepage8.jpg);
+			background-attachment: fixed;
+		    background-position: center;
+		    background-repeat: no-repeat;
+		    background-size: cover;
+			height: 900px;
+			.textPresent
+			{
+				width: 30%;
+				margin-left: 33%;
+				padding-top: 6%;
+				padding-bottom: 300px;
+			}
+		}
+		#main_services
+		{
+			background-image: url(../images/bg-homepage2.jpg);
+			background-attachment: fixed;
+		    background-position: center;
+		    background-repeat: no-repeat;
+		    background-size: cover;
+			padding: 150px 0;
+			.services
+			{
+				display: flex;
+				flex-direction: row;
+				justify-content: space-around;
+				align-items: flex-start;
+			}
+		}
+		#p4
+		{
+			background-image: url(../images/bg-homepage4.jpg);
+			background-attachment: fixed;
+		    background-position: center;
+		    background-repeat: no-repeat;
+		    background-size: cover;
+			.assistance
+			{
+				min-height: 700px;
+				padding-top: 100px;
+				padding-bottom: 100px;
+				width: 60%;
+				.icondivp4
+				{
+					width: 50%;
+				}
+			}
+		}
+	}
+	#contact
+	{
+		background-image: url(../images/bg-contact.jpg);
+		background-attachment: fixed;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+		min-height: 850px;
+		.formulaire
+		{
+			width: 500px;
+			margin-left: 10%;
+			margin-top: 50px;
+			input,
+			textarea
+			{
+				width: 400px;
+			}
+		}
+	}
+	
+}

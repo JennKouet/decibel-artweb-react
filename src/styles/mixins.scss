@@ -1,0 +1,63 @@
+// Mixins globales
+@mixin flexRow()
+		{
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+		}
+@mixin flexColumn()
+		{
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			text-align: center;
+		}
+@mixin navBar()
+		{
+			background-color: #000000;
+
+		}
+@mixin aLink()
+	{
+		text-decoration: none;
+		color: #FFFFFF;
+		font-size: 2rem;
+	}
+@mixin aHover()
+{
+	text-decoration: none;
+	color: #FFFFFF;
+	transition: 0.5s;
+	text-decoration: none;
+	background-color: #91b929;
+	border-radius: 15px;
+	padding: 5px;
+}
+@mixin totalWidth()
+	{
+		width: 100%;
+		margin: auto;
+	}
+@mixin fontAwesome()
+{
+	padding: 0 10px;
+}
+@mixin buttonColor()
+{
+	width: 100px;
+	background-color: #000000;
+	color: #91b929;
+	border-radius: 5px;
+	font-size: 1.3rem;
+	border: 1px solid #91b929;
+	box-shadow: 1px 1px 5px #91b929;
+	padding: 7px;
+	margin-top: 10px;
+}
+@mixin buttonColorHover()
+{
+	background-color: #91b929;
+	color: #000000;
+	transition: 0.3s;
+}

@@ -1,0 +1,278 @@
+@import "mixins.scss";
+@import "variables.scss";
+
+// MAIN MOBILE //
+// MAIN MOBILE HOME /////////////////////////////////////////////
+#home
+{
+	background-position: top center;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	.parallax1
+	{
+		display: none;
+	}
+	#presentation
+	{
+		margin-top: 100px;
+		border: 15px solid #dbd7cb;
+		padding: 20px;
+		.arrowp1
+		{
+			text-align: center;
+		}
+	}
+	.title_mobile img
+	{
+		width: 35%;
+		margin-top: 16%;
+		margin-left: 31%;
+	}
+	#main_services
+	{
+		.icondiv
+		{
+			text-align: center;
+			.fas
+			{
+				font-size: 3rem;
+				border: 1px solid $colorBlack;
+				border-radius: 100%;
+				padding: 10px;
+				text-align: center;
+				margin-top: 20px;
+				background-color: $mainColor;
+			}
+		}
+		h2
+		{
+			padding: 20px 0;
+			color: $colorWhite;
+			text-shadow: 5px 5px 10px $colorBlack;
+			text-transform: uppercase;
+		}
+		.services
+		{
+			width: 80%;
+			margin: auto;
+			article
+			{
+				margin: auto;
+				text-align: center;
+				margin-bottom: 20px;
+				img
+				{
+					width: 100%;
+					text-align: center;
+					margin: auto;
+				}
+			}
+			
+		}
+	}
+	#p4
+	{
+		
+		.assistance
+		{
+			h2
+			{
+				padding: 20px 0;
+				color: $colorWhite;
+				text-shadow: 1px 1px 1px $mainColor;
+				text-transform: uppercase;
+			}
+			.icondivp4
+			{
+				width: 100%;
+				margin: auto;
+				text-align: center;
+			}
+			.para
+			{
+				width: 80%;
+				margin: auto;
+				.table
+				{
+					background-color: #dbd9d8;
+					padding: 10px;
+				}
+			}
+		}
+	}
+	.bas
+	{
+		text-align: center;
+		padding: 30px 0;
+		img
+		{
+			width: 3%;
+			background-color: $mainColor;
+			border-radius: 100%;
+		}
+		img:hover
+		{
+			opacity: 0.6;
+		}
+	}
+}
+// MAIN MOBILE CREATIONS /////////////////////////////////////////////
+#creations
+{
+	.creations_header
+	{
+		background-color: #232931;
+		width: 100%;
+		margin-bottom: 30px;
+		.icondiv
+		{
+			
+			text-align: center;
+			padding: 20px;
+			.fas
+			{
+				font-size: 3rem;
+				background-color: $mainColor;
+				padding: 20px;
+				border-radius: 100%;
+			}
+		}
+		h2
+		{
+			color: $colorWhite;
+			text-transform: uppercase;
+		}
+		article
+		{
+			p
+			{
+				color: #dbd9d8;
+				padding: 20px;
+			}
+		}
+	}
+	#section_sites
+	{
+		.sites
+		{
+			ul
+			{
+				list-style-type: none;
+				padding: 0;
+				text-align: center;
+				width: 70%;
+				margin: auto;
+				li
+				{
+					padding-bottom: 40px;
+					border-bottom: 1px dotted $mainColor;
+					margin-bottom: 30px;
+					a:hover
+					{
+						opacity: 0.6;
+						transition: 0.3s;
+					}
+					h3
+					{
+						font-size: 2rem;
+						text-align: left;
+						padding-bottom: 0;
+						margin-bottom: 0;
+					}
+				}
+			}
+		}
+		.responsive
+		{
+			width: 70%;
+			background-color: $mainColor;
+			padding: 20px 10px;
+			border-radius: 10px;
+			margin: 0 auto 30px;
+			color: $colorWhite;
+			font-weight: bolder;
+			font-size: 1.3rem;
+			border: 1px solid #b0acaa;
+		}
+		img
+		{
+			width: 100%;
+			border: 2px solid $mainColor;
+		}
+	}
+}
+// MAIN MOBILE CONTACT ///////////////////////////////////////////////////////
+#contact
+{
+	background-image: url(../images/bg-contact.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: right;
+	.pencil
+	{
+		text-align: center;
+		padding-top: 50px;
+		.fas
+		{
+			font-size: 3rem;
+			background-color: $mainColor;
+			padding: 20px;
+			border-radius: 100%;
+		}
+	}
+	h2
+	{	
+		padding: 20px 0;
+		color: $colorWhite;
+		text-shadow: 1px 1px 1px $mainColor;
+		text-transform: uppercase;
+		text-align: center;
+		margin-bottom: 0;
+	}
+	.formulaire
+	{
+		text-align: center;
+		padding-top: 10px;
+		input
+		{
+			width: 250px;
+			padding: 10px;
+			border-radius: 20px;
+			margin: 10px;
+			font-size: 1.3rem;
+		}
+		textarea
+		{
+			width: 250px;
+			padding: 10px;
+			margin: 10px;
+			height: 100px;
+			font-size: 1.3rem;
+		}
+		div
+		{
+			width: 80%;
+			margin: auto;
+			h3
+			{
+				color: $colorWhite;
+				padding-bottom: 0;
+			}
+			.addFile
+			{
+				background-color: $colorWhite;
+			}
+		}
+		button
+		{
+			padding: 10px 20px;
+			background-color: $colorMainGrey;
+			color: $colorWhite;
+			font-size: 1.4rem;
+			border-radius: 7px;
+			border: 1px solid $mainColor;
+			margin-bottom: 50px;
+		}
+
+	}
+}
